@@ -1,6 +1,7 @@
 import React from 'react';
 import ProductTable from './ProductTable';
 import SearchBar from './SearchBar';
+import HeaderBar from './HeaderBar.js';
 import { Stocks } from '../api/stocks';
 
 export default class FilterableProductTable extends React.Component {
@@ -20,8 +21,10 @@ export default class FilterableProductTable extends React.Component {
 		this.setState({ isStockOnly: e.target.checked });
 	}
 	render() {
+		let appName = 'StockList';
 		return (
-			<div>
+			<div className='site-container'>
+				<HeaderBar appName={appName} />
 				<SearchBar
 					stocks={Stocks}
 					searchText={this.state.searchText}

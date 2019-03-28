@@ -1,0 +1,27 @@
+.form {
+    max-width: $content-max-width;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.form__input-text {
+    margin: $standard-space 0;
+    padding: $standard-space;
+    font-size: $base-font-size;
+    max-width: $content-max-width;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.form__checkbox {
+    margin-bottom: $standard-space;
+
+}
+
+.form__checkbox-isStock-label {
+    margin-bottom: $standard-space;
+}

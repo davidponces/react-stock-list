@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Helvetica,
+        Arial,
+        sans-serif;
+    font-size: $base-font-size;
+    background-color: $site-background-color;
+
+}
+
+h1 {
+    font-size: $very-large-font-size;
+    margin-bottom: $standard-space;
+}
+
+h2 {
+    font-size: $large-font-size;
+    margin-bottom: $standard-space;
+}
+
+p {
+    margin-bottom: $standard-space;
+}
+
+.site-container {}

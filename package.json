@@ -12,6 +12,7 @@
     "meteor-node-stubs": "^0.4.1",
     "react": "^16.5.0",
     "react-dom": "^16.5.0",
+    "react-flip-move": "^3.0.3",
     "shortid": "^2.2.14"
   },
   "meteor": {

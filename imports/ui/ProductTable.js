@@ -2,6 +2,7 @@ import React from 'react';
 import ProductCategoryRow from './ProductCategoryRow';
 import ProductRow from './ProductRow';
 import shortid from 'shortid';
+import FlipMove from 'react-flip-move';
 
 export default class ProductTable extends React.Component {
 	constructor(props) {
@@ -75,12 +76,12 @@ export default class ProductTable extends React.Component {
 
 	render() {
 		return (
-			<div>
-				<div key={shortid.generate()}>
-					<span>Name</span>
-					<span>Price</span>
+			<div className='product-list'>
+				<div className='product-list-header' key={shortid.generate()}>
+					<h2 className='product-list-header__name'>Name</h2>
+					<h2 className='product-list-header__price'>Price</h2>
 				</div>
-				{this.renderStocks()}
+				<FlipMove>{this.renderStocks()}</FlipMove>
 			</div>
 		);
 	}

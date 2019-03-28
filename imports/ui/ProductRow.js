@@ -1,5 +1,4 @@
 import React from 'react';
-import shortid from 'shortid';
 
 export default class ProductRow extends React.Component {
 	constructor(props) {
@@ -7,9 +6,9 @@ export default class ProductRow extends React.Component {
 	}
 	render() {
 		return (
-			<div>
-				<span>{this.props.stockName}</span>
-				<span>{this.props.stockPrice}</span>
+			<div className='product-row'>
+				<span className='product-row__name'>{this.props.stockName}</span>
+				<span className='product-row__price'>{this.props.stockPrice}</span>
 			</div>
 		);
 	}
